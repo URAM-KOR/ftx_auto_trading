@@ -1,6 +1,6 @@
 @echo off
 
-set "VIRTUAL_ENV=C:\Users\82103\PycharmProjects\auto_rich\venv"
+set "VIRTUAL_ENV=C:\Users\msz34\PycharmProjects\ftx_auto_trading\venv"
 
 if defined _OLD_VIRTUAL_PROMPT (
     set "PROMPT=%_OLD_VIRTUAL_PROMPT%"

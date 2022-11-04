@@ -6,6 +6,9 @@ def login(YOUR_API_KEY,API_SECRET):
         'apiKey': YOUR_API_KEY,
         'secret': API_SECRET,
         'enableRateLimit': True,
+        'options':{
+            'defaultType':'future',
+        },
           })
 
     return client
