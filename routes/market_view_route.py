@@ -1,10 +1,10 @@
 from flask import Blueprint, render_template
 
-from infrastructure import market_view_render, usd_fetch_ohlcv
+from infrastructure import market_view_render, usd_fetch_markets
 
 market = Blueprint('market', __name__, url_prefix='/')
 
 @market.route('/market')
 def market_route():
-    perp_dict = usd_fetch_ohlcv.fetch_ohlcv()
+    perp_dict = usd_fetch_markets.fetch_perp_markets()
     return render_template(market_view_render.market_view(), perp_dict = perp_dict)

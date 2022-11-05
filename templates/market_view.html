@@ -7,13 +7,19 @@
     <thead>
     <th>No.</th>
     <th>Symbol</th>
-    <th>Rate %</th>
+    <th>changeBod </th>
+    <th>change1h </th>
+    <th>change24h </th>
+    <th>volumeUsd24h </th>
     </thead>
-    {% for key,value in perp_dict %}
+    {% for row in perp_dict %}
     <thead>
     <th>{{loop.index}}</th>
-    <th>{{key}}</th>
-    <th>{{value}} %</th>
+    <th>{{row.name}}</th>
+    <th>{{row.changeBod}} %</th>
+    <th>{{row.change1h}} %</th>
+    <th>{{row.change24h}} %</th>
+    <th>{{row.volumeUsd24h}} USD</th>
     </thead>
     {%endfor%}
   </table>
