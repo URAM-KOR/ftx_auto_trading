@@ -190,3 +190,10 @@ perp_list = [
     'ZIL-PERP',
     'ZRX-PERP',
 ]
+quantities_list= [
+    10
+]
+position_list=[
+    'Buy',
+    'Sell'
+]
